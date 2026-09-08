@@ -1,0 +1,42 @@
+*{
+  box-sizing: border-box;
+}
+
+img{
+  display: block; /* Una imagen es mejor que se comporte como bloque que como texto*/
+}
+
+body{
+  padding: 20px;
+  min-height: 100dvh; /* Tamaño dinamico con respecto a la pantalla*/
+}
+
+main{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(400px, 1fr)); /*min 400px max 1fr*/
+  gap: 20px;
+}
+
+
+dialog{
+  max-width: 50%;
+}
+
+dialog::backdrop{
+  background-color: rgba(6, 6, 6, 0.5);
+}
+
+.modal-card{
+  max-width: 75%;
+}
+
+.modal-card--image{
+  max-width: 75%;
+  margin: 0 auto;
+}
+
+.content{
+
+  display: grid;
+  place-items: center;
+}

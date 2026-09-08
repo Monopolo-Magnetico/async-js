@@ -57,7 +57,7 @@ export async function updateProduct (id, productObjectUpdate) {
             body: JSON.stringify(productObjectUpdate)
         });
         const data = await response.json();
-        console.log(data);
+        return data;
     } catch(error) {
         console.error("Error", error);
     }
@@ -70,7 +70,7 @@ export async function deleteProduct (id){
             method: "DELETE"
         });
         const data = await response.json();
-        console.log(data);
+        return data;
     } catch(error) {
         console.error("Error", error);
     }
